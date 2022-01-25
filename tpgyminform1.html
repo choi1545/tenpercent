@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김내과진료메뉴</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+*{
+    font-family: 'Gothic A1', sans-serif;  
+}
+.mytitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+
+    .btn {
+    width: 300px;
+    height: 40px;
+    border: 2px solid orange;
+
+    text-align: center;
+    line-height: 40px;
+
+    text-decoration: none;
+    /* 위줄을넣어야 글씨에 밑줄이 지워짐 */
+    color:gray;
+
+    font-weight: bold;
+    
+    border-radius: 150px;
+}
+   
+.btn:hover {
+    /* color: white; */
+    align-items: center;
+    justify-content: center; 
+     text-decoration: none;
+    background-color: orange;
+    color: white;
+}  
+.box {
+    width: 1000px;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0; */
+    margin: 40px auto 30px auto;
+    
+    
+}
+.story{
+    width: 650px;
+    height: 200px;
+    margin-bottom: 30px;
+    
+    
+    
+} 
+ /* 이미지를 넣는 방법이 씨에스에서 결정하고 보디에선 디브 클래스='image'로간단히 디브로처리함 */
+
+
+.mytitle > h1{
+   color: orange;
+}
+ 
+.story > h3{
+    margin: 5px 0px 0px 0px;
+    color: darkgoldenrod;
+    /* color: green; */
+    font-size: 16px;
+
+}  
+.story > p{
+   line-height: 24px;
+   color: darkgoldenrod;
+   /* color: orange;
+     */
+} 
+
+
+    </style>
+</head>
+<body>
+  
+   <div class="mytitle">
+    <a  class="btn" href="index.html " target="_blank">홈으로가기</a> 
+   </div> 
+  <div class="box">
+     
+      
+      <div class="story">
+          <h3>@공지1: 2021-05-10</h3>
+          <h3>제목: TP-GYM 수강료 안내:</h3>
+          <p>5월 15일부터 코로나 접종을 시작합니다<br>전화로 신청을 하시고 예약 날자에 준비물을 지참하시고 오십시요<br>열이 있거나 지병으로 콘디션이 안좋으신 분들은  예약을 미리 취소하시기 바랍니다.<br>문의하실일이 있으시면 02-789-3344로 문의해 주세요.
+            </p>
+      </div>
+   </div>
+ 
+</body>
+</html>

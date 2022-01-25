@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="FAQstyle.css"> -->
+    <title>공지사항목록</title>
+    <style> 
+    .box{
+        background-color: goldenrod;
+        color: black;
+        font-weight: 200;
+        font-family: 바탕체;
+        border: solid 2px ; 
+          
+    }
+    *{
+    margin: 0px;
+    padding: 0px;
+}
+.table {
+    border-collapse: collapse;
+}
+.caption{
+    display: none;
+   
+}
+a {
+    text-decoration: none;
+    color:inherit ;
+}
+.board_list_wrap {
+   padding: 50px;
+}
+h3{
+    color: darkgoldenrod;
+}
+.board_list{
+  width: 100%; 
+  border-top: 2px solid navy;
+}
+.board_list tr{
+    border-bottom:1px solid #ccc;
+}
+
+.board_list th,
+.board_list td {
+    padding: 10px;
+    font-size: 14px;
+  
+}
+
+.board_list td{
+    text-align: center;
+}
+.board_list .tit {
+    text-align: left;
+}
+/* .board_list .tit:hover {
+    text-decoration: underline;
+} */
+
+.board_list .tit{
+    text-align: left;
+}
+.board_list .tit:hover {
+    text-decoration: underline ;
+}
+.board_list_wrap .paging {
+   margin-top: 10px;
+   text-align: center; 
+   font-size: 0px;
+
+}
+.board_list_wrap .paging a {
+    display: inline-block;
+    border-radius: 13px;
+    font-size: 12px;
+    margin-left: 20px;
+    padding: 5px 10px;
+}
+/* 페이비부분 보더윤곽은빼고 라디우스로 둥글게만하고 밑에음영색갈로 만듬 드리고 원에만*/
+.board_list_wrap .paging a:first-child {
+    margin-left: 0;
+}
+/* 첫페이지는 마진이 필요없음으로  */
+
+/* .board_list_wrap .paging.board_list_wrap .paging a .num a .bt{
+    border: 1px solid #eee;
+      background: #eee; */
+}
+
+.board_list_wrap .paging a.bt {
+    border: 1px soloid #eee;
+    background: #eee;
+ }
+
+.board_list_wrap .paging a.num {
+    background: rgba(180, 190, 165, 0.63) ;
+    border:1px solid black ;
+    font-weight: 600;
+ }
+/* paging a num 만 보더를 줌 */
+ .board_list_wrap .paging a.num.on{
+    background: rgb(235, 213, 88);
+ }
+
+    </style>
+</head>
+<body>
+    <div class="board_list_wrap"> 
+        <table class="board_list"> 
+            <caption><h3>TPM 공지사항 </h3></caption>
+            <thead>
+                <tr>
+                    <th>  번호  </th>  
+                    <th> 제목   </th>  
+                    <th>글쓴이    </th>  
+                    <th> 작성일   </th> 
+                    <th> 조회수   </th>  
+                </tr>
+            </thead>
+            <tbody>
+                <tr>    
+                    <td>1</td>
+                    <td class="tit">
+                        <a href="tpgyminform1.html">TP-GYM 수강료 안내</a>
+                    </td>
+                    <td>관리자</td>
+                    <td>2022-3-7</td>
+                    <td>355</td>
+                </tr>
+                <tr>    
+                    <td>2</td>
+                    <td class="tit">
+                        <!-- ??? 표시안됨 -->
+                        <a href="tpgyminformtwo.html">TP-GYM 1,2호점 운동 소개</a>
+                    </td>
+                    <td>관리자</td>
+                    <td>2021-4-6</td>
+                    <td>354</td>
+                </tr>
+                <tr>    
+                    <td>3</td>
+                    <td class="tit">
+                        <a href="tpgyminform_3.html">TP-GYM 등록 및 환불 안내사항</a>
+                    </td>
+                    <td>관리자</td>
+                    <td>2021-4-5</td>
+                    <td>255</td>
+                </tr>
+                <!-- <tr>    
+                    <td>2</td>
+                    <td class="tit">
+                        <a href="okinform.html">겨울철 독김접종</a>
+                    </td>
+                    <td>관리자</td>
+                    <td>2021-3-5</td>
+                    <td>545</td>
+                </tr>
+                <tr>    
+                    <td>1</td>
+                    <td class="tit">
+                        <a href="okinform.html">김옥란내과  공지사항 안내</a>
+                    </td>
+                    <td>관리자</td>
+                    <td>2021-2-8</td>
+                    <td>333</td>
+                </tr> -->
+            </tbody>
+        </table>
+        <!-- 테이블 밑에 또다른 날짜 보기는 디브로 새로열음page란 클래스로 -->
+        <div class="paging">  
+            <a href="gymfaq.html" class="bt">첫 페이지</a>
+            <!-- <a href="#" class="bt">이전 페이지</a> -->
+            <a href="gymfaq.html" class="num on">1</a>
+            <a href="#"class="num">2</a>
+            <a href="#" class="num">3</a>
+            <!-- <a href="#" class="bt">다음 페이지 </a> -->
+            <a href="" class="bt">마지막 페이지</a>
+           <b><a href="index.html">Home Page로 </a></b> 
+
+
+        </div>
+       </div>
+</body>
+</html>

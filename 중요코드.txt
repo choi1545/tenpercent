@@ -1,0 +1,603 @@
+@@@@@@@@@@
+GYM 홈페이지 NAVbar logo 삽입법
+@@@html에는
+<nav class="navbar">
+            <div class="navbar_logo">
+                <div class="img1"></div>
+                <!-- <i class="fab fa-instagram"></i> </a> </li> -->
+                <div> <a href="">10% GYM.</a></div> 
+                
+            </div>
+            <ul class="navbar_menu">를 쓰고
+ @@@CSS에는 로고파일image11.jpg를삽입
+    .img1 {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border: solid  yellow 1px ;
+  border-radius: 4px;
+  background-image: url('images/Image11.jpg');
+  background-position: center;
+  background-color: rgb(243, 237, 237);
+  background-size: cover;
+  }    
+
+
+@@@@@@@@
+웹페이지 사라졌을때에 들어가는 주소임   카카오로 비번넣으면됨,  또는 북마크 코딩폴더에 spartaclub으로 들어가면 됨
+기본예시는 index1(첫째기본폼)  index2(지도 위치삽입폼) index3(간결완성폼) 에  기본폼들 기록
+https://online.spartacodingclub.kr/enrolleds/608f6cd13e2340dcb10730e8/edetails/608f6cd13e2340dcb10730ee
+
+
+story 글
+h2가족과 함께한 여름 휴가
+h3다다다다다다다다다다다다닫
+p나나나나나나나나나나나나난
+
+http://spartacodingclub.shop/free/202105/exhibition(스파르파 홈페이지 숙제제출)
+
+@@@@@@@@@
+@@@네이버로 받은 폰트어썸 자료
+ <script src="https://kit.fontawesome.com/3d05a091ce.js" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/7a637576f1.js" crossorigin="anonymous"></script> (구글다운받은것)
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+    <scipt src="main.js" defer></scipt>
+@@@ css에 처리는 
+body {
+    margin: 0;
+    font-family:'Source Sans Pro';
+}
+@@@네이버로 받은 폰트어썸 자료
+ <script src="https://kit.fontawesome.com/3d05a091ce.js" crossorigin="anonymous">
+    </script>
+CSS에는 body {
+    margin: 0;
+    /* 이것을 안하면 주위로 흰공간보임 */
+    font-family: 'Source Sans Pro', sans-serif;
+} 로 기록
+
+HTML기본구조@@@@@@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스파르타코딩클럽 | HTML 기초</title>
+</head>
+
+<body>
+    <!-- 구역을 나누는 태그들 -->
+    <div>나는 구역을 나누죠</div>
+    <p>나는 문단이에요</p>
+    <ul>
+        <li> bullet point!1 </li>
+        <li> bullet point!2 </li>
+    </ul>
+
+    <!-- 구역 내 콘텐츠 태그들 -->
+    <h1>h1은 제목을 나타내는 태그입니다. 페이지마다 하나씩 꼭 써주는 게 좋아요. 그래야 구글 검색이 잘 되거든요.</h1>
+    <h2>h2는 소제목입니다.</h2>
+    <h3>h3~h6도 각자의 역할이 있죠. 비중은 작지만..</h3>
+    <hr>
+    a 태그입니다: <a href="http://google.com/" target="_blank">하이퍼링크</a>
+    <hr>
+    img 태그입니다: <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
+    <hr>
+    input 태그입니다: <input type="text" />
+    <hr>
+    button 태그입니다: <button> 버튼입니다</button>
+    <hr>
+    textarea 태그입니다: <textarea></textarea>
+</body>
+
+</html>
+
+CSS 코딩@@@@
+.box {
+    background-color: green;
+    color: white;
+
+    width: 800px;
+    height: 800px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first {
+    background-color: red;
+
+    width: 300px;
+    height: 200px;
+}
+
+.second {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+
+CSS마진정리@@@@
+.box {
+    background-color: green;
+    color: white;
+
+    width: 800px;
+    height: 800px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first {
+    background-color: red;
+
+    width: 300px;
+    height: 200px;
+
+    margin-bottom: 20px;
+}
+
+.second {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+
+h1 a tag html & css@@@@
+<div>
+	  <h1>나의 추억거리를 공유합니다</h1>
+	  <a href="http://google.com/" target="_blank">모든 수강생들의 추억 보러가기 ></a>
+</div>
+.mytitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+.btn {
+    width: 300px;
+    height: 40px;
+    border: 2px solid #e8344e;
+
+    text-align: center;
+    line-height: 40px;
+
+    text-decoration: none;
+    color:#e8344e;
+
+    font-weight: bold;
+    
+    border-radius: 150px;
+}
+btn후보효과
+.btn:hover {
+    color: white;
+    background-color: #e8344e;
+}
+
+박스구조잡기@@@@
+<div class="box">
+    <div class="map"></div>
+    <div class="story"></div>
+</div>
+.box{
+    width: 1000px;            
+    background-color: green;
+}
+
+.map {
+    width: 500px;
+    height: 500px;
+
+    background-color: red;
+}
+
+.story {
+    width: 450px;
+    height: 500px;
+
+    background-color: blue;
+}
+
+.box {
+    width: 1000px;            
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin: 40px auto 0px auto;
+}
+
+.map {
+    width: 500px;
+    height: 500px;
+
+    background-color: red;
+
+    margin-right: 30px;
+}
+박스구조잡기@@@@
+.box {
+    width: 1000px;            
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin: 40px auto 0px auto;
+}
+
+.map {
+    width: 500px;
+    height: 500px;
+
+    background-color: red;
+
+    margin-right: 30px;
+}
+
+.story {
+    width: 450px;
+    height: 500px;
+
+    background-color: blue;
+}
+박스구조및 씨에시 이미지쉽게삽입법@@@@
+<div class="box">
+    <div class="map"></div>
+    <div class="story">
+        <div class="img"></div>
+        <h2>스파르타 본진</h2>
+        <h3>서울 강남구 논현로 425 501호</h3>
+        <p>
+            스파르타의 첫번째 단독 사무실.
+            와 우리 사무실이 생긴다니!
+            부동산도 보러 다니고, 인테리어도 우리가 하고.
+            의자 조립하느라 다들 손이 빨갛게 됐다.
+            그래도 좋았던 날.
+            이 날 점심으로 짜장면을 먹었던 것 같은데..
+        </p>
+    </div>
+</div>
+.img {
+    width: 450px;
+    height: 300px;
+
+    background-image: url('image.jpg');
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 24px;
+}
+
+.story > h2 {
+    color: green;
+    margin: 20px 0px 0px 0px;
+}
+
+.story > h3 {
+    color: gray;
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.story > p {
+    line-height: 24px;
+}
+
+카카오지도서비스@@@
+https://apis.map.kakao.com/
+
+카카오지도코그자바스크립트@@@@
+<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=535068688f1a8bca1c21a9445ede0a89"></script>
+<script>
+      var markerPosition = new kakao.maps.LatLng(37.4982081791642, 127.0378892828671)
+      var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
+          mapOption = { 
+              center: markerPosition, // 지도의 중심좌표
+              level: 3 // 지도의 확대 레벨
+          };
+
+      var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+      var imageSrc = "https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/2021_05_free_parents/sparta-marker.png"; 
+      var imageSize = new kakao.maps.Size(65, 86); 
+      var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize); 
+      
+      var marker = new kakao.maps.Marker({
+          map: map,
+          position: markerPosition,
+          image : markerImage
+      });
+
+</script>
+
+그후지도자리에 아이디맾을추가@@@@
+<div class="box">
+    <div class="map" id="map"></div>
+    <div class="story">
+        <div class="img"></div>
+        <h2>장소명이 들어갑니다.</h2>
+        <h3>주소가 들어갑니다.</h3>
+        <p>
+            내용이 들어갈 곳입니다. 내용이 들어갈 곳입니다. 내용이 들어갈 곳입니다. 내용이 들어갈 곳입니다. 내용이 들어갈 곳입니다. 내용이 들어갈 곳입니다.
+        </p>
+    </div>
+</div>
+
+모서리둥글게@@@@
+.map {
+    width: 500px;
+    height: 500px;
+
+    margin-right: 30px;
+    border-radius: 24px;
+}
+
+구글폰트입히기 html css 두가지 복사븥힘@@@@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&display=swap" rel="stylesheet">
+
+* {
+	  font-family: 'Gothic A1', sans-serif;
+}
+
+모바일로처리시@@@@
+@media screen and (max-width: 640px) {
+
+}
+폰트사이즈가 줄어야됨
+h1 {
+    font-size: 26px;
+}
+박스구조도바꿔야됨
+.box {
+    flex-direction: column;
+    width: 100%;
+}
+지도사이즈도조절해야됨
+.map {
+    width: 100%;
+    height: 200px;
+
+    margin: 0;
+}
+사진과스토리도조절해야됨
+.story {
+    width: 100%;
+    height: auto;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img {
+    width: 100%;
+    height: 200px;
+}
+카카오페이스북공유시
+og:image, og:title, og:description (을 미리 세팅해두면,
+카카오톡, 페이스북 등이 공유할 때 가져간답니다. 일종의 약속!)
+배포하고 url받기
+http://spartacodingclub.shop/upload_family
+
+페북카카오까지 전체공유 완성코드@@@@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 추억거리를 공유합니다</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="이범규 님의 추억사진"/>
+    <meta property="og:description" content="내가 만든 첫번째 웹페이지!"/>
+    <meta property="og:image" content="image.jpg"/>
+
+    <style>
+        * {
+            font-family: 'Gothic A1', sans-serif;
+        }
+
+        .mytitle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+						margin-top: 30px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        .btn {
+            width: 300px;
+            height: 40px;
+            border: 2px solid #e8344e;
+
+            text-align: center;
+            line-height: 40px;
+
+            text-decoration: none;
+            color:#e8344e;
+
+            font-weight: bold;
+            
+            border-radius: 150px;
+        }
+        
+        .btn:hover {
+            color: white;
+            background-color: #e8344e;
+        }
+
+        .box {
+            width: 1000px;            
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            margin: 40px auto 0px auto;
+        }
+
+        .map {
+            width: 500px;
+            height: 500px;
+
+            margin-right: 30px;
+            border-radius: 24px;
+        }
+
+        .story {
+            width: 450px;
+            height: 500px;
+        }
+
+        .img {
+            width: 450px;
+            height: 300px;
+
+            background-image: url('image.jpg');
+            background-position: center;
+            background-size: cover;
+
+            border-radius: 24px;
+        }
+
+        .story > h2 {
+            color: green;
+            margin: 20px 0px 0px 0px;
+        }
+
+        .story > h3 {
+            color: gray;
+            margin-top: 5px;
+            font-weight: normal;
+            font-size: 16px;
+        }
+
+        .story > p {
+            line-height: 24px;
+        }
+
+        @media screen and (max-width: 640px) {
+            h1 {
+                font-size: 26px;
+            }
+
+            .box {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .map {
+                width: 100%;
+                height: 200px;
+
+                margin:auto;
+            }
+
+            .story {
+                width: 100%;
+                height: auto;
+
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .img {
+                width: 100%;
+                height: 200px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="mytitle">
+        <h1>나의 추억거리를 공유합니다</h1>
+        <a class="btn" href="http://spartacodingclub.shop/free/202105/exhibition" target="_blank">모든 수강생들의 추억 보러가기 ></a>
+    </div>
+    <div class="box">
+        <div class="map" id="map"></div>
+        <div class="story">
+            <div class="img"></div>
+            <h2>스파르타 본진</h2>
+            <h3>서울 강남구 논현로 425 501호</h3>
+            <p>
+                스파르타의 첫번째 단독 사무실.
+                와 우리 사무실이 생긴다니!
+                부동산도 보러 다니고, 인테리어도 우리가 하고.
+                의자 조립하느라 다들 손이 빨갛게 됐다.
+                그래도 좋았던 날.
+                이 날 점심으로 짜장면을 먹었던 것 같은데..
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=535068688f1a8bca1c21a9445ede0a89"></script>
+    <script>
+        var markerPosition = new kakao.maps.LatLng(37.49818264327384, 127.03785709647359)
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
+            mapOption = { 
+                center: markerPosition, // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+        var imageSrc = "https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/2021_05_free_parents/sparta-marker.png"; 
+        var imageSize = new kakao.maps.Size(65, 86); 
+        var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize); 
+        
+        var marker = new kakao.maps.Marker({
+            map: map,
+            position: markerPosition,
+            image : markerImage
+        });
+
+    </script>
+</body>
+</html>
+
+카카오페북공유 og tag넣기@@@@ title 바로 아래에 아래 3가지 코드를 부착시킴
+<meta property="og:title" content="ㅇㅇㅇ 님의 추억사진"/>
+<meta property="og:description" content="내가 만든 첫번째 웹페이지!"/>
+<meta property="og:image" content="image.jpg"/>
+
+코드스페닛snffjtj눌러서 사이트들어가서 공유하고배포하기@@@@
+http://spartacodingclub.shop/upload_family
+
+
+글씨에  아이콘삽입코드@@@@
+ <div class="box">
+        <div class="map">
+          <div class="img" ></div>
+        
+        <h3>주소: 경기도 광명시 소화동 67번지</h3>
+        
+        <h3>  전화: 02-780-3447</h3>
+        
+        <h3> <i class="fa fa-bus" style="font-size:15px"></i>: 여성회관 앞 하차 (72, 534,02,643)</h3>
+       </div>
+wjsghk전화아이콘은 안됨 어썸펀트 아이디문제일수도있음 원본 샘플함의 어썸으로 다시 카피하고해볼것
+<script src="https://kit.fontawesome.com/7a637576f1.js" crossorigin="anonymous"></script>이것을 헤드에붙히고 아이콘삽입할것

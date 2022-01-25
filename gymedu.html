@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텐퍼센트 교육센타(TPM) 안내</title>
+    <script src="https://kit.fontawesome.com/7a637576f1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+    *{
+        font-family: 'Gothic A1', sans-serif;  
+    }
+    .mytitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 30px;
+    }
+
+
+        .btn {
+        width: 300px;
+        height: 40px;
+        border: 2px solid orange;
+
+        text-align: center;
+        line-height: 40px;
+
+        text-decoration: none;
+        /* 위줄을넣어야 글씨에 밑줄이 지워짐 */
+        color:#e8344e;
+
+        font-weight: bold;
+        
+        border-radius: 150px;
+    }
+    a{
+        text-decoration: none;
+        margin-right: 10px;
+        color: green;
+    }
+    a:hover {
+        color: white;
+        background-color: orange;
+    }    
+    .btn:hover {
+        /* color: white; */
+        background-color: orange;
+    }  
+    .box {
+        width: 1000px;
+        /* background-color: darkcyan; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        /* margin-top: 40px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 0; */
+        margin: 40px auto 30px auto;
+        
+    }
+    /* .map{
+        width: 500px;
+        height: 500px;
+        background-color: red;
+        margin-right: 30px;
+        border-radius: 24px;
+    } */
+    .story1{
+        width: 450px;
+        height: 500px;
+        margin-bottom: 60px;
+        margin-right: 20px;
+        /* background-color: blue; */
+    }       
+    .story2{
+        width: 450px;
+        height: 500px;
+        margin-bottom: 50px;
+        /* background-color: blue; */
+    } 
+    /* 이미지를 넣는 방법이 씨에스에서 결정하고 보디에선 디브 클래스='image'로간단히 디브로처리함 */
+    .img{
+        width: 450px;
+        height: 300px;
+        background-image: url('images/tpm1.jpg');
+        background-position: center;
+        background-size: cover;
+        border-radius: 24px;
+    }
+    .mapp1{
+        width: 450px;
+        height: 300px;
+        background-image: url('images/map3.jpg') !important;
+        background-position: right;
+        background-size: cover;
+        border-radius: 24px;
+    }  
+    .place{
+        width: 800px;
+        height: 650px;
+        background-image: url('images/지도3.jpg');
+        justify-content: center;
+        margin-left: 200px;
+        /* text-align: center;
+        justify-content: center;
+        background-size: cover;
+        margin-left: 60px;
+        border-radius: 24px; */
+    }
+    .mytitle > h1{
+    color:darkgoldenrod;
+    }
+    .story1  > h2{
+        margin: 10px 0px 10px 0px;
+        color:darkgoldenrod;
+        
+    }  
+    .story2  > h2{
+        margin: 10px 0px 10px 0px;
+        color:darkgoldenrod;
+    
+    }  
+    .story1 > h3{
+        margin: 5px 0px 10px 0px;
+        color:darkgoldenrod;
+        
+        font-size: 18px;
+
+    }  
+    .story2 > h3{
+        margin: 5px 0px 10px 0px;
+        color:darkgoldenrod;
+        
+        font-size: 18px;
+
+    }  
+    .story1 > p{
+        color: darkgoldenrod;
+    line-height: 24px;
+        
+    } 
+    .story2 > p{
+        color: darkgoldenrod;
+        line-height: 24px;
+    } 
+    .box2 > h2{
+        color: darkgoldenrod;
+        line-height: 24px;
+        text-align: center;
+    } 
+    @media screen and (max-width: 640px) {
+                h1 {
+                    font-size: 26px;
+                }
+
+                .box {
+                    flex-direction: column;
+                    width: 100%;
+                }
+
+                .mapp1 {
+                    width: 100%;
+                    height: 200px;
+                    margin-top: 20px;
+                    
+                    margin:auto;
+                }
+                .story1 {
+                    width: 100%;
+                    height: auto;
+                    margin-left: 20px;
+                    margin-top: 10px;
+                    margin-bottom: 15px;
+                }
+
+                .story2 {
+                    width: 100%;
+                    height: auto;
+                    margin-left: 10px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+
+                .img {
+                    width: 100%;
+                    height: 200px;
+                    margin-top: 20px;
+                }
+                .place {
+                    width: 100%;
+                    margin: auto;
+                    margin-top: 20px;
+                }
+            }
+
+        </style>
+</head>
+<body>
+  
+    <div class="mytitle">
+   
+        <h1> 텐퍼센트 교육센타 (T P M) 안내 </h1>
+        <div class="btn">  <a href="index.html">Home으로</a>
+        </div>
+      
+        <!-- <a  class="btn"  href="http://spartacodingclub.shop/free/202105/exhibition" target="_blank">모든 수강생들의 추억 보러가기>></a> -->
+  </div>
+  <div class="box">
+    <div class="story1">
+        <div class="img"></div>
+        <h2>PT 전문 강사 교육 및 수료증 안내 소개.</h2>
+        <h3>5분의 강사가 PT,YOGA,FILATES를 개인별 1:1 , 그룹별롤 전문 강사 교육을 담당하고 있읍니다.</h3>
+        <p> <b>강사 교육에 필요한 기초적 해부 생리 근육학 이론및 실습 훈련 <br>교육 과정이 실습과 이론을 대면 비대면 교육으로 주말에 진행됩니다.<br>문의 및 예약 <i class="fa fa-phone"></i>:  010-5000-4000 , 02-300-0000 <br>홈페이지에서 인스타, 블로그, 페이스북을<br> 방문하셔서 둘러보시고 문의(10% 교육센타)해주세요.
+        </b> </p>
+       
+    </div>
+      <div class="story2">
+          <!-- div에 이미지mapp.png삽입법 -->
+        <div class="mapp1" style="background-image: url('images/map3.jpg') !important;"></div>
+        <h2>PT 강사 교육 과정 소개 :</h2>
+        <h3>교육시간: 주말 예약제로 1:1 또는 그룹을 대상으로 실시.</h3>
+        <p> <b>교육 장소: 송파구 잠실동 233_1 지하 1층 PT 교육센타<br>교육 내용: 실습 교육(6주),근육학 해부 생리 이론 <br>교육을 온 오프 라인으로 실시<br>실습교육:최은권, 김인경,배성재 이론교육: 최종호,김옥란 <br>교육 종목: PT, FILATES, YOGA 개인 및 그룹 이론 과 실기 교육 <br> 평일: FILATES 개인교습 대강 예약 가능<br>사업자 등록번호: 123-23123-1232
+          </p>
+      </div>
+    </div>
+    <!-- <div class= "box2">
+        <h2> TPM 교육센타 오시는 길 </h2>
+        <div class="place"></div>
+    </div> -->
+</body>
+</html>

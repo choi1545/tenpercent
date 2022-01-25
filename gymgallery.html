@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: orange;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+a {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
+.box1 {
+  padding: 50px;
+  text-align: center;
+  color: orange;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.box1 {
+  width: 100%;
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>텐퍼센트 GYM 을 소개합니다.</h1>
+  <p>텐퍼센트 GYM. 1호점 안내:관악구 봉천동 56 빌딩 2층 <br>텐퍼센트 GYM. 2호점 안내:관악구본천동 45 빌딩 3층 <br>텐퍼센트 교육센타 안내:송파구잠실동 213-8  지하 1층 </p>
+  
+  <p>연락처: 010-8989-1234  02-239-1234 email: ekchoi0421@namver.com</p>
+</div>
+
+<h2 style="text-align:center">텐퍼센트 GYM Gallery. </h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/tpmlogo.jpg" alt="#" style="width:100%">
+      <div class="container">
+        <h2>텐퍼센트 PM 교육센타</h2>
+        <p class="title">강사:최은권,최종호,김옥란,김인경</p>
+        <p>PT FILATES 강사 교육 과정:<br> 장소(송파구 잠실동 213-8 지하 1층) <br>시간(주말:토요일,일요일) 대면,비대면 강의와 실습, 수료후 자격증 발급</p>
+        <p>최은권:ekchoi0421@namver.com</p>
+        <p><a href="gymedu.html">바로가기</a> </p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/filalogo.jpg" alt="#" style="width:100%">
+      <div class="container">
+        <h2>1호점 Filates Center</h2>
+        <p class="title">강사:김인경</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>김인경:cjh1545@catholic.ac.kr</p>
+        <p><a href="tp1ho.html">바로가기</a> </p>
+        <!-- <p><button class="button">Contact</button></p> -->
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images/logow1.jpg" alt="#" style="width:100%">
+      <div class="container">
+        <h2>2호점 PT FILATES Center</h2>
+        <p class="title">강사:최은권,박찬수,박대리,김인경</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>박찬수john@example.com</p>
+        <p>김대리john@example.com</p>
+        <p><a href="tp2ho.html">바로가기</a> </p>
+        <!-- <p><button class="button">Contact</button></p> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
